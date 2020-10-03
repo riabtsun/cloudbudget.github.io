@@ -40,18 +40,23 @@
 .footer-copyright {
   text-align: center;
 }
+.sn-icons {
+  display: flex;
+  flex-direction: row;
+}
 .icon-fb,
 .icon-linkedin,
 .icon-twitter {
-  font-size: 30px;
-  background-color: black;
+  font-size: 20px;
+  color: #101010;
+  padding-top: 20px;
+  padding-right: 15px;
 }
 @media (min-width: 768px) {
   .footer-col {
     width: 20%
   }
   .footer-main {
-    width: 1140px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
