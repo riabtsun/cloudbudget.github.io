@@ -6,6 +6,11 @@ a {
   color: #fff;
   cursor: pointer;
 }
+a:hover {
+  text-shadow: 1px 1px 2px #f57d89;
+  font-size: 1.2em;
+  transition: 0.3s;
+}
 button {
   cursor: pointer;
 }
@@ -66,6 +71,12 @@ button {
   text-transform: uppercase;
   color: #fff;
 }
+.head-btn:hover {
+  background: #fff;
+  color: #f57d89;
+  transition: 0.3s;
+}
+
 .main-title {
   font-weight: 700;
   align-content: center;
@@ -125,7 +136,13 @@ button {
   font-size: 14px;
   line-height: 17px;
   text-transform: uppercase;
-  color: #Ed4c5c;
+  color: #ed4c5c;
+}
+.main-btn:hover {
+  background: #ed4c5c;
+  color: #fff;
+  transition: 0.3s;
+
 }
 @media (min-width: 576px) {
   .main-container {

@@ -1,12 +1,12 @@
 .footer {
-    background-color: #fafafa;
+  background-color: #fafafa;
 }
 .footer-main {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .footer-col {
   width: 50%
@@ -27,15 +27,21 @@
   text-align: center;
 }
 .footer a {
+  display: block;
   font-size: 12px;
   line-height: 160%;
   text-transform: capitalize;
   color: #000;
+  text-align: center;
+}
+.footer-services {
+  text-align: center;
 }
 .bank-logo {
     display: block;
     margin-right: auto;
     margin-left: auto;
+    padding-bottom: 20px;
 }
 .footer-copyright {
   text-align: center;
@@ -43,6 +49,8 @@
 .sn-icons {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
 }
 .icon-fb,
 .icon-linkedin,
@@ -52,9 +60,16 @@
   padding-top: 20px;
   padding-right: 15px;
 }
+.icon-twitter {
+  padding-right: 0;
+}
 @media (min-width: 768px) {
   .footer-col {
     width: 20%
+  }
+  .footer a {
+    text-align: start;
+
   }
   .footer-main {
     display: flex;
@@ -65,6 +80,7 @@
   }
   .footer-copyright {
     text-align: start;
+    padding-top: 140px;
     padding-bottom: 86px;
     width: 100%;
   }
@@ -75,7 +91,13 @@
   }
   .footer-text {
   text-align: start;
+  } 
+  .sn-icons {
+  justify-content: start;
+  }
 }
-
-  
+@media (min-width: 992px) {
+  .footer-wrap {
+    width: 100%;
+  }
 }

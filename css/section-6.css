@@ -9,12 +9,14 @@
 }
 .contact-text {
   display: block;
-  text-align: center;
+  margin-right: auto;
+  margin-left: auto;  
   font-size: 14px;
   line-height: 140%;
   text-align: justify;
   color: #000;
   margin-bottom: 20px;
+  max-width: 364px;
 }
 .input-name,
 .input-lastname,
@@ -51,6 +53,11 @@ input::placeholder {
   color: #fff;
   margin-right: auto;
   margin-left: auto;
+}
+.submit-btn:hover {
+  color: #ed4c5c;
+  background: #fff;
+  transition: 0.3s;
 }
 @media (min-width: 768px) {
   .inputs-block {
@@ -124,8 +131,8 @@ input::placeholder {
     margin-bottom: 122px;
   }
   .contact-text {
-    max-width: 434px;
     margin-bottom: 284px;
+    margin-left: 0;
   }
   .contact-title {
     text-align: start;
