@@ -1,0 +1,136 @@
+.contact-title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  color: #000;
+  padding-top: 116px;
+  padding-bottom: 96px;
+  text-align: center;
+}
+.contact-text {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: justify;
+  color: #000;
+  margin-bottom: 20px;
+}
+.input-name,
+.input-lastname,
+.input-phone,
+.select-list {
+  width: 255px;
+  height: 60px;
+  border-radius: 6px;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+select,
+input::placeholder {
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(19, 39, 67, 0.5);
+}
+.submit-btn {
+  display: block;
+  padding-top: 16px;
+  padding-right: 34px;
+  padding-bottom: 16px;
+  padding-left: 34px;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  background: #ed4c5c;
+  border: 1.5px solid #ed4c5c;
+  box-sizing: border-box;
+  border-radius: 6px;
+  color: #fff;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .inputs-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .input-name,
+  .input-lastname,
+  .input-phone,
+  .select-list {
+    margin-right: 20px;
+  }
+  .select-list {
+    width: 294px;
+  }
+}
+@media (min-width: 992px) {
+  .inputs-block {
+    padding-top: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .input-name,
+  .input-lastname {
+    width: 255px;
+  }
+  .contact-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+  }
+  .contact-title {
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+  .contact-text {
+    padding-top: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .contact-block {
+    margin-left: 166px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: start;
+    align-content: flex-start;
+  }
+  .inputs-block {
+    padding-top: 40px;
+    flex-direction: row;
+    align-items: center;
+  }
+  .input-name,
+  .input-lastname {
+    width: 200px;
+    margin-bottom: 24px;
+  }
+  .input-phone {
+    width: 460px;
+    margin-bottom: 24px;
+  }
+  .select-list {
+    width: 496px;
+    margin-bottom: 28px;
+  }
+  .submit-btn {
+    margin-left: 26px;
+    margin-bottom: 122px;
+  }
+  .contact-text {
+    max-width: 434px;
+    margin-bottom: 284px;
+  }
+  .contact-title {
+    text-align: start;
+    width: 100%;
+    padding-bottom: 60px;
+  }
+}
+

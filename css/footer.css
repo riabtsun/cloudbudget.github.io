@@ -1,0 +1,76 @@
+.footer {
+    background-color: #fafafa;
+}
+.footer-main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-col {
+  width: 50%
+}
+.footer-title {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #101010;
+}
+.footer-text {
+  font-size: 12px;
+  line-height: 150%;
+  color: #101010;
+  text-align: center;
+}
+.footer a {
+  font-size: 12px;
+  line-height: 160%;
+  text-transform: capitalize;
+  color: #000;
+}
+.bank-logo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.footer-copyright {
+  text-align: center;
+}
+.icon-fb,
+.icon-linkedin,
+.icon-twitter {
+  font-size: 30px;
+  background-color: black;
+}
+@media (min-width: 768px) {
+  .footer-col {
+    width: 20%
+  }
+  .footer-main {
+    width: 1140px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .footer-copyright {
+    text-align: start;
+    padding-bottom: 86px;
+    width: 100%;
+  }
+  .footer-title {
+  text-align: start;
+  padding-top: 86px;
+  padding-bottom: 32px;
+  }
+  .footer-text {
+  text-align: start;
+}
+
+  
+}

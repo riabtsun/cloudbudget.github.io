@@ -271,5 +271,14 @@ a {
 .icon-Cloud:before {
   content: "\e908";
 }
+.icon-twitter:before {
+  content: "\e909";
+}
+.icon-linkedin:before {
+  content: "\e90a";
+}
+.icon-fb:before {
+  content: "\e90b";
+}
 
   

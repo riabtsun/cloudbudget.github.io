@@ -1,0 +1,98 @@
+.techno-title {
+  width: 100%;
+  padding-top: 64px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  color: #000;
+}
+.tecno-item-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: #101010;
+}
+.tecno-text {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #000000;
+  text-align: center;
+  max-width: 192px;
+}
+.cloud-icon,
+.icon-search,
+.icon-iwwa-file-pdf,
+.icon-iwwa-file-csv {
+  position: relative;
+  text-align: center;
+  padding-top: 50px;
+  display: block;
+  font-size: 80px;
+  color: #d52047
+}
+.cloud-icon::after,
+.icon-search::after,
+.icon-iwwa-file-pdf::after,
+.icon-iwwa-file-csv::after {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  right: 0;
+  content: '01';
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 120px;
+  text-align: center;
+  color: rgba(16, 16, 16, 0.08);
+}
+.icon-search::after {
+  content: '02';
+}
+.icon-iwwa-file-pdf::after {
+  content: '03';
+}
+.icon-iwwa-file-csv::after {
+  content: '04';
+}
+@media (min-width: 576px) {
+  .techno-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) {
+  .col-4 {
+    width: 50%;
+  }
+  .techno-container {
+    justify-content: space-around;
+  }
+}
+@media (min-width: 992px) {
+  .col-4 {
+    width: 25%;
+  }
+  .techno-title {
+    padding-top: 170px;
+    padding-bottom: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .techno-title {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .techno-box {
+    padding-bottom: 110px;
+  }
+}
