@@ -1,6 +1,9 @@
+.techno-container {
+  padding-top: 64px;
+  padding-bottom: 120px;
+}
 .techno-title {
   width: 100%;
-  padding-top: 64px;
   font-weight: 600;
   font-size: 36px;
   line-height: 43px;
@@ -37,6 +40,9 @@
   display: block;
   font-size: 80px;
   color: #d52047
+}
+.icon-iwwa-file-csv{
+  font-size: 64px;
 }
 .cloud-icon::after,
 .icon-search::after,
@@ -91,8 +97,5 @@
   .techno-title {
     padding-top: 70px;
     padding-bottom: 70px;
-  }
-  .techno-box {
-    padding-bottom: 110px;
   }
 }
