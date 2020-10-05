@@ -59,11 +59,11 @@ input::placeholder {
   color: #fff;
   margin-right: auto;
   margin-left: auto;
-}
-.submit-btn:hover {
-  color: #ed4c5c;
-  background: #fff;
-  transition: 0.3s;
+    &:hover {
+      color: #ed4c5c;
+      background: #fff;
+      transition: 0.3s;    
+    }
 }
 @media (min-width: 768px) {
   .inputs-block {
