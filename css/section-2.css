@@ -35,20 +35,15 @@ img {
 }
 video {
   max-width: 100%;
-  margin-right: auto;
-  margin-left: auto;
 }
 .video-box {
-  display: flex;
+  display: inline-flex;
   position: relative;
-  justify-content: center;
-  max-width: 100%;
-  margin-right: auto;
-  margin-left: auto;
 }
 .play-video-btn {
   position: absolute;
-  top: 33%;
+  top: calc(50% - 33px);
+  left: calc(50% - 33px);
 }
 @media (min-width: 992px) {
   .container {
@@ -84,6 +79,3 @@ video {
     text-align: left;
   }
 }
-/* * {
-  outline: 1px solid red;
-}  */
