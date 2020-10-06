@@ -23,30 +23,28 @@ button:focus {
 }
 .container {
   max-width: 100%;
-  @include media-brekpoint-up(xs) {
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  @include media-breakpoint-up(xs) {
     max-width: 540px;
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
   }
-  @include media-brekpoint-up(sm) {
+  @include media-breakpoint-up(sm) {
     max-width: 720px;
   }
-  @include media-brekpoint-up(md) {
+  @include media-breakpoint-up(md) {
     max-width: 960px;
   }
-  @include media-brekpoint-up(lg) {
+  @include media-breakpoint-up(lg) {
     max-width: 1140px;
   }
 }
-.container {
-  max-width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-} 
 .header {
   display: none;
   position: absolute;
@@ -56,7 +54,7 @@ button:focus {
   top: 0;
   right: 0;
   left: 0;
-  @include media-brekpoint-up(xs) {
+  @include media-breakpoint-up(xs) {
     display: flex;
   }
 }
@@ -67,12 +65,12 @@ button:focus {
   align-content: center;
   margin-right: auto;
   margin-left: auto;
-  @include media-brekpoint-up(sm) {
+  @include media-breakpoint-up(sm) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  @include media-brekpoint-up (lg) {
+  @include media-breakpoint-up (lg) {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -90,10 +88,10 @@ button:focus {
   align-content: center;
   text-transform: uppercase;
   color: #fff;
-  @include media-brekpoint-up(sm) {
+  @include media-breakpoint-up(sm) {
     flex-direction: row;
   }
-  @include media-brekpoint-up(lg) {
+  @include media-breakpoint-up(lg) {
     width: 445px;
     justify-content: space-between;
     margin-left: 160px;
@@ -115,7 +113,7 @@ button:focus {
   align-items: center;
   text-transform: uppercase;
   padding: 10px;
-  @include media-brekpoint-up(lg) {
+  @include media-breakpoint-up(lg) {
     padding: 0;
   }
 }
@@ -134,10 +132,10 @@ button:focus {
       color: #f57d89;
       transition: 0.3s;
     }
-    @include media-brekpoint-up(xs) {
+    @include media-breakpoint-up(xs) {
       margin-top: 5px;
     }
-    @include media-brekpoint-up(lg) {
+    @include media-breakpoint-up(lg) {
       margin-left: 30px;
     }
 }
@@ -151,10 +149,10 @@ button:focus {
   line-height: 1.2;
   letter-spacing: 0.05em;
   color: #fff;
-  @include media-brekpoint-up(xs) {
+  @include media-breakpoint-up(xs) {
     font-size: 44px;
   }
-  @include media-brekpoint-up(lg) {
+  @include media-breakpoint-up(lg) {
     font-size: 72px;
   }
 }
@@ -169,7 +167,7 @@ button:focus {
   margin-right: auto;
   margin-left: auto;
   color: #fff;
-  @include media-brekpoint-up(lg) {
+  @include media-breakpoint-up(lg) {
     font-size: 24px;
     font-weight: 400;
     line-height: 150%;
@@ -181,20 +179,20 @@ button:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  @include media-brekpoint-up(xs) {
+  @include media-breakpoint-up(xs) {
     min-height: 782px;
     background-image: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), url('../images/main_section_bg.jpg');
     background-size: contain;
     background-position: top center;
     background-repeat: no-repeat;
   }
-  @include media-brekpoint-up(sm) {
+  @include media-breakpoint-up(sm) {
     min-height: 408px;
   }
-  @include media-brekpoint-up(md) {
+  @include media-breakpoint-up(md) {
     min-height: 538px;
   }
-  @include media-brekpoint-up(lg) {
+  @include media-breakpoint-up(lg) {
     min-height: 636px;
   }
 }
@@ -206,7 +204,7 @@ button:focus {
   align-items: center;
   text-transform: uppercase;
   color: #fff;
-  @include media-brekpoint-up(sm) {
+  @include media-breakpoint-up(sm) {
     margin-top: 0;
   }
 }
@@ -236,15 +234,15 @@ button:focus {
     }
 }
 .nav {
-  @include media-brekpoint-up(sm) {
+  @include media-breakpoint-up(sm) {
       width: 100%;
     }
-  @include media-brekpoint-up(lg) {
+  @include media-breakpoint-up(lg) {
       width: auto;
     }
   }
 .logo-link {
-  @include media-brekpoint-up(sm) {
+  @include media-breakpoint-up(sm) {
     width: 100%;
     display: flex;
     justify-content: center;

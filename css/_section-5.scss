@@ -8,6 +8,14 @@
   line-height: 43px;
   color: #fff;
   text-align: center;
+  @include media-breakpoint-up(md) {
+    max-width: 440px;
+    text-align: left;
+    padding-left: 60px;
+  }
+  @include media-breakpoint-up(lg) {
+    padding-left: 0;
+  }
 }
 .app-text {
   padding-top: 40px;
@@ -19,78 +27,71 @@
   margin-left: auto;
   color: #fff;
   max-width: 445px;
+  @include media-breakpoint-up(md) {
+    max-width: 364px;
+  }
+  @include media-breakpoint-up(lg) {
+    margin-left: 0;
+  }
 }
 .icon-ion-logo-google-playstore,
 .icon-ion-logo-apple-appstore,
 .icon-simple-icons_windows {
   color: #fff;
+  @include media-breakpoint-up(md) {
+    margin-right: 25px;
+  }
 }
 .icon-apps {
   display: flex;
   justify-content: space-around;
+  @include media-breakpoint-up(md) {
+    display: flex;
+    justify-content: start;
+    padding-left: 60px;
+  }
+  @include media-breakpoint-up(lg) {
+    padding-left: 0;
+  }
 }
 .app-image {
   margin-top: 20px;
   margin-bottom: 20px;
   background: #c4c4c4;
   border-radius: 15px;
+  @include media-breakpoint-up(md) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  @include media-breakpoint-up(lg) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
 }
 .img-block {
   text-align: center;
+  @include media-breakpoint-up(lg) {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
-@media (min-width: 992px) {
-  .col-2 {
+.col-2 {
+    @include media-breakpoint-up(md) {
     width: 50%;
   }
-  .app-title {
-    max-width: 440px;
-    text-align: left;
-    padding-left: 60px;
-  }
-  .app-text {
-    max-width: 364px;
-  }
-  .icon-apps {
-    display: flex;
-    justify-content: start;
-    padding-left: 60px;
-  }
-  .icon-ion-logo-google-playstore,
-  .icon-ion-logo-apple-appstore,
-  .icon-simple-icons_windows {
-    margin-right: 25px;
-  }
-  .app-image {
-    margin-top: 60px;
-    margin-bottom: 60px;
-    text-align: center;
-  }
-}
-@media (min-width: 1200px) {
-  .app-title {
-    padding-left: 0;
-  }
-  .icon-apps {
-    padding-left: 0;
-  }
-  .app-image {
-    margin-top: 60px;
-    margin-bottom: 60px;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-  }
-  .img-block {
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .app-text {
-  margin-left: 0;
-  }
-  .first-block {
+}  
+.first-block {
+  @include media-breakpoint-up(lg){
     margin-left: 166px;
   }
-  .second-block {
+}
+.second-block {
+  @include media-breakpoint-up(lg) {
     margin-right: 60px;
     margin-left: 30px;
-}}
+  } 
+}

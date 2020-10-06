@@ -1,3 +1,40 @@
+img {
+  max-width: 100%;
+}
+video {
+  max-width: 100%;
+  height: 312px;
+}
+.play-video-btn {
+  background: none;
+  border: none;
+  position: absolute;
+  top: calc(50% - 33px);
+  left: calc(50% - 33px);
+  &:focus {
+    border: none;
+  }
+}
+.sec-2-container {
+  @include media-breakpoint-up(md) {
+    display: flex;
+    align-items: center;
+  }
+}
+.lang-btn {
+  @include media-breakpoint-up(md) {
+    margin-right: 30px;
+  }
+}
+.section-2 {
+  @include media-breakpoint-up(md) {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-top: 94px;
+    padding-bottom: 94px;  
+  }
+}
 .h2-sec-2 {
   max-width: 445px;
   font-weight: 700;
@@ -7,17 +44,37 @@
   text-align: center;
   margin-right: auto;
   margin-left: auto;
+  @include media-breakpoint-up(md) {
+    margin-left: 0;
+    padding: 10px;
+    text-align: start;
+  }
 }
 .sec-2-description {
   font-size: 14px;
   line-height: 140%;
   max-width: 445px;
   padding: 10px;
+  text-align: justify;
   margin-right: auto;
   margin-left: auto;
+  @include media-breakpoint-up(md) {
+    margin-left: 0;
+  }
 }
 .sec-2-text {
   width: 100%;
+  @include media-breakpoint-up(md) {
+    width: 50%;
+    margin: 0;
+  }
+}
+.video-box {
+  display: inline-flex;
+  position: relative;
+  @include media-breakpoint-up(md) {
+    max-width: 50%;
+  }
 }
 .link-sec-2 {
   display: block;
@@ -26,53 +83,7 @@
   line-height: 140%;
   color: #ed4c5c;
   text-align: center;
-}
-img {
-  max-width: 100%;
-}
-video {
-  max-width: 100%;
-}
-.video-box {
-  display: inline-flex;
-  position: relative;
-}
-.play-video-btn {
-  position: absolute;
-  top: calc(50% - 33px);
-  left: calc(50% - 33px);
-}
-@media (min-width: 992px) {
-  .container {
-    display: flex;
-    align-items: center;
-  }
-  .lang-btn {
-    margin-right: 30px;
-  }
-  .section-2 {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    padding-top: 94px;
-    padding-bottom: 94px;  
-  }
-  .h2-sec-2 {
-    margin-left: 0;
-    padding: 10px;
-    text-align: start;
-  }
-  .sec-2-description {
-    margin-left: 0;
-  }
-  .sec-2-text {
-    width: 50%;
-    margin: 0;
-  }
-  .video-box {
-    max-width: 50%;
-  }
-  .link-sec-2 {
+  @include media-breakpoint-up(md) {
     text-align: left;
   }
 }
