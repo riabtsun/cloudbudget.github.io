@@ -23,17 +23,12 @@ button:focus {
 }
 .container {
   max-width: 100%;
-  max-width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
   @include media-breakpoint-up(xs) {
     max-width: 540px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
   }
   @include media-breakpoint-up(sm) {
     max-width: 720px;

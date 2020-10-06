@@ -31,7 +31,6 @@ button:focus {
 
 .container {
   max-width: 100%;
-  max-width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -41,10 +40,6 @@ button:focus {
 @media screen and (min-width: 576px) {
   .container {
     max-width: 540px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 
@@ -769,6 +764,10 @@ video {
   }
 }
 
+.box-2 {
+  top: 478px;
+}
+
 @media screen and (min-width: 992px) {
   .box-2 {
     left: 342px;
@@ -779,6 +778,10 @@ video {
   .box-2 {
     left: 412px;
   }
+}
+
+.box-3 {
+  top: 812px;
 }
 
 @media screen and (min-width: 992px) {
@@ -935,8 +938,23 @@ video {
   }
 }
 
+.section-app {
+  background-color: #ed4d5c;
+}
+
 .app-container {
   background-color: #ed4d5c;
+}
+
+@media screen and (min-width: 992px) {
+  .app-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .app-title {
@@ -1055,22 +1073,25 @@ video {
   text-align: center;
 }
 
-@media screen and (min-width: 1200px) {
-  .img-block {
-    margin-right: auto;
-    margin-left: auto;
+@media screen and (min-width: 992px) {
+  .col-2 {
+    max-width: 50%;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .col-2 {
-    width: 50%;
-  }
-}
-
-@media screen and (min-width: 1200px) {
   .first-block {
-    margin-left: 166px;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1078,6 +1099,31 @@ video {
   .second-block {
     margin-right: 60px;
     margin-left: 30px;
+  }
+}
+
+.contact-container {
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+
+@media screen and (min-width: 992px) {
+  .contact-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 992px) and (min-width: 1200px) {
+  .contact-container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -1091,6 +1137,21 @@ video {
   text-align: center;
 }
 
+@media screen and (min-width: 992px) {
+  .contact-title {
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-title {
+    text-align: start;
+    width: 100%;
+    padding-bottom: 60px;
+  }
+}
+
 .contact-text {
   display: block;
   margin-right: auto;
@@ -1101,6 +1162,18 @@ video {
   color: #000;
   margin-bottom: 20px;
   max-width: 364px;
+}
+
+@media screen and (min-width: 992px) {
+  .contact-text {
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-text {
+    margin-left: 0;
+  }
 }
 
 .input-name,
@@ -1117,9 +1190,19 @@ video {
   margin-right: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .input-name,
+  .input-lastname,
+  .input-phone,
+  .select-list {
+    margin-right: 20px;
+  }
+}
+
 input:focus,
 select:focus {
-  border: 4px solid #ed4c5c;
+  outline: 2px solid #ed4c5c;
+  border: none;
 }
 
 select,
@@ -1157,7 +1240,7 @@ input::placeholder {
   padding-bottom: 16px;
   padding-left: 34px;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 17px;
   text-transform: uppercase;
@@ -1178,7 +1261,14 @@ input::placeholder {
   transition: 0.3s;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 1200px) {
+  .submit-btn {
+    margin-left: 26px;
+    margin-top: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .inputs-block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1189,20 +1279,10 @@ input::placeholder {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .input-name,
-  .input-lastname,
-  .input-phone,
-  .select-list {
-    margin-right: 20px;
-  }
-  .select-list {
-    width: 294px;
-  }
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .inputs-block {
-    padding-top: 40px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1211,10 +1291,49 @@ input::placeholder {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+@media screen and (min-width: 1200px) {
+  .inputs-block {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .select-list {
+    width: 294px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .select-list {
+    width: 496px;
+    margin-bottom: 28px;
+  }
+}
+
+@media screen and (min-width: 992px) {
   .input-name,
   .input-lastname {
     width: 255px;
   }
+}
+
+@media screen and (min-width: 1200px) {
+  .input-name,
+  .input-lastname {
+    width: 200px;
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 992px) {
   .contact-block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1227,18 +1346,10 @@ input::placeholder {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .contact-title {
-    padding-top: 0;
-    padding-bottom: 20px;
-  }
-  .contact-text {
-    padding-top: 0;
-  }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .contact-block {
-    margin-left: 166px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1257,47 +1368,22 @@ input::placeholder {
     -ms-flex-line-pack: start;
         align-content: flex-start;
   }
-  .inputs-block {
-    padding-top: 40px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .input-name,
-  .input-lastname {
-    width: 200px;
-    margin-bottom: 24px;
-  }
+}
+
+@media screen and (min-width: 1200px) {
   .input-phone {
     width: 460px;
     margin-bottom: 24px;
-  }
-  .select-list {
-    width: 496px;
-    margin-bottom: 28px;
-  }
-  .submit-btn {
-    margin-left: 26px;
-    margin-bottom: 122px;
-    margin-top: auto;
-  }
-  .contact-text {
-    margin-bottom: 284px;
-    margin-left: 0;
-  }
-  .contact-title {
-    text-align: start;
-    width: 100%;
-    padding-bottom: 60px;
   }
 }
 
 .footer {
   background-color: #fafafa;
+}
+
+.footer-container {
+  padding-top: 92px;
+  padding-bottom: 80px;
 }
 
 .footer-main {
@@ -1318,85 +1404,7 @@ input::placeholder {
           align-items: center;
 }
 
-.footer-col {
-  width: 50%;
-}
-
-.footer-title {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
-  color: #101010;
-}
-
-.footer-text {
-  font-size: 12px;
-  line-height: 150%;
-  color: #101010;
-  text-align: center;
-}
-
-.footer a {
-  display: block;
-  font-size: 12px;
-  line-height: 160%;
-  text-transform: capitalize;
-  color: #000;
-  text-align: center;
-}
-
-.footer-services {
-  text-align: center;
-}
-
-.bank-logo {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  padding-bottom: 20px;
-}
-
-.footer-copyright {
-  text-align: center;
-}
-
-.sn-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 20px;
-}
-
-.icon-fb,
-.icon-linkedin,
-.icon-twitter {
-  font-size: 20px;
-  color: #101010;
-  padding-top: 20px;
-  padding-right: 15px;
-}
-
-.icon-twitter {
-  padding-right: 0;
-}
-
-@media (min-width: 768px) {
-  .footer-col {
-    width: 20%;
-  }
-  .footer a {
-    text-align: start;
-  }
+@media screen and (min-width: 768px) {
   .footer-main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1414,20 +1422,100 @@ input::placeholder {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  .footer-copyright {
-    text-align: start;
-    padding-top: 140px;
-    padding-bottom: 86px;
-    width: 100%;
+}
+
+.footer-col {
+  width: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-col {
+    width: 20%;
   }
+}
+
+.footer-title {
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #101010;
+}
+
+@media screen and (min-width: 768px) {
   .footer-title {
     text-align: start;
-    padding-top: 86px;
     padding-bottom: 32px;
   }
+}
+
+.footer-text {
+  font-size: 12px;
+  line-height: 150%;
+  color: #101010;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
   .footer-text {
     text-align: start;
   }
+}
+
+.footer a {
+  display: block;
+  font-size: 12px;
+  line-height: 160%;
+  text-transform: capitalize;
+  color: #000;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer a {
+    text-align: start;
+  }
+}
+
+.footer-services {
+  text-align: center;
+}
+
+.bank-logo {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 20px;
+}
+
+.footer-copyright {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-copyright {
+    text-align: start;
+    padding-top: 140px;
+    width: 100%;
+  }
+}
+
+.sn-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
   .sn-icons {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -1435,7 +1523,20 @@ input::placeholder {
   }
 }
 
-@media (min-width: 992px) {
+.icon-fb,
+.icon-linkedin,
+.icon-twitter {
+  font-size: 20px;
+  color: #101010;
+  padding-top: 20px;
+  padding-right: 15px;
+}
+
+.icon-twitter {
+  padding-right: 0;
+}
+
+@media screen and (min-width: 992px) {
   .footer-wrap {
     width: 100%;
   }

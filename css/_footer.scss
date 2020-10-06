@@ -1,30 +1,50 @@
 .footer {
   background-color: #fafafa;
 }
+.footer-container {
+  padding-top: 92px;
+  padding-bottom: 80px;
+}
 .footer-main {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @include media-breakpoint-up(sm) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
 .footer-col {
-  width: 50%
+  width: 50%;
+  @include media-breakpoint-up(sm) {
+    width: 20%;
+  }
 }
 .footer-title {
-  padding-top: 10px;
   padding-bottom: 10px;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
   text-align: center;
   color: #101010;
+  @include media-breakpoint-up(sm) {
+    text-align: start;
+    padding-bottom: 32px;  
+  }
 }
 .footer-text {
   font-size: 12px;
   line-height: 150%;
   color: #101010;
   text-align: center;
+  @include media-breakpoint-up(sm) {
+    text-align: start;
+  }
 }
 .footer a {
   display: block;
@@ -33,6 +53,9 @@
   text-transform: capitalize;
   color: #000;
   text-align: center;
+  @include media-breakpoint-up(sm) {
+    text-align: start;
+  }
 }
 .footer-services {
   text-align: center;
@@ -45,12 +68,20 @@
 }
 .footer-copyright {
   text-align: center;
+  @include media-breakpoint-up(sm) {
+    text-align: start;
+    padding-top: 140px;
+    width: 100%;
+  }
 }
 .sn-icons {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 20px;
+  @include media-breakpoint-up(sm) {
+    justify-content: start;
+  }
 }
 .icon-fb,
 .icon-linkedin,
@@ -63,41 +94,8 @@
 .icon-twitter {
   padding-right: 0;
 }
-@media (min-width: 768px) {
-  .footer-col {
-    width: 20%
-  }
-  .footer a {
-    text-align: start;
-
-  }
-  .footer-main {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  .footer-copyright {
-    text-align: start;
-    padding-top: 140px;
-    padding-bottom: 86px;
-    width: 100%;
-  }
-  .footer-title {
-  text-align: start;
-  padding-top: 86px;
-  padding-bottom: 32px;
-  }
-  .footer-text {
-  text-align: start;
-  } 
-  .sn-icons {
-  justify-content: start;
-  }
-}
-@media (min-width: 992px) {
-  .footer-wrap {
+.footer-wrap {
+  @include media-breakpoint-up(md) {
     width: 100%;
   }
 }

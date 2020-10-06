@@ -101,6 +101,7 @@
   }
 }
 .box-2 {
+  top: 478px;
   @include media-breakpoint-up(md) {
   left: 342px;
   }
@@ -109,6 +110,7 @@
   }
 }
 .box-3 {
+  top: 812px;
   @include media-breakpoint-up(md) {
     left: 662px;
   }

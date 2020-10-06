@@ -1,5 +1,12 @@
+.section-app {
+  background-color:#ed4d5c;
+}
 .app-container {
-    background-color:#ed4d5c;;
+    background-color:#ed4d5c;
+    @include media-breakpoint-up(md) {
+      display: flex;
+      justify-content: space-between;
+    }
 }
 .app-title {
   padding-top: 20px;
@@ -74,19 +81,18 @@
 }
 .img-block {
   text-align: center;
-  @include media-breakpoint-up(lg) {
-    margin-right: auto;
-    margin-left: auto;
-  }
 }
 .col-2 {
     @include media-breakpoint-up(md) {
-    width: 50%;
+    max-width: 50%;
   }
 }  
 .first-block {
-  @include media-breakpoint-up(lg){
-    margin-left: 166px;
+  @include media-breakpoint-up(md){
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 .second-block {
