@@ -93,28 +93,43 @@
   }
 }
 .box-1 {
+  @include media-breakpoint-up(xs) {
+    top: 14%;
+  }
   @include media-breakpoint-up(md) {
-  left: 22px
+    top: 60%;
+    left: 22px
   }
   @include media-breakpoint-up(lg) {
+    top: 34%;
     left: 32px
   }
 }
 .box-2 {
-  top: 478px;
+  top: 44%;
+  @include media-breakpoint-up(xs) {
+    top: 47%;
+  }
   @include media-breakpoint-up(md) {
-  left: 342px;
+    top: 60%;
+    left: 342px;
   }
   @include media-breakpoint-up(lg) {
+    top: 34%;
     left: 412px;
   }
 }
 .box-3 {
-  top: 812px;
+  top: 77%;
+  @include media-breakpoint-up(xs) {
+    top: 80%;
+  }
   @include media-breakpoint-up(md) {
+    top: 60%;
     left: 662px;
   }
   @include media-breakpoint-up(lg) {
+    top: 34%;
     left: 794px;
   }
 }

@@ -752,46 +752,70 @@ video {
   }
 }
 
+@media screen and (min-width: 576px) {
+  .box-1 {
+    top: 14%;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .box-1 {
+    top: 60%;
     left: 22px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .box-1 {
+    top: 34%;
     left: 32px;
   }
 }
 
 .box-2 {
-  top: 478px;
+  top: 44%;
+}
+
+@media screen and (min-width: 576px) {
+  .box-2 {
+    top: 47%;
+  }
 }
 
 @media screen and (min-width: 992px) {
   .box-2 {
+    top: 60%;
     left: 342px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .box-2 {
+    top: 34%;
     left: 412px;
   }
 }
 
 .box-3 {
-  top: 812px;
+  top: 77%;
+}
+
+@media screen and (min-width: 576px) {
+  .box-3 {
+    top: 80%;
+  }
 }
 
 @media screen and (min-width: 992px) {
   .box-3 {
+    top: 60%;
     left: 662px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .box-3 {
+    top: 34%;
     left: 794px;
   }
 }
