@@ -16,6 +16,8 @@ video {
   }
 }
 .sec-2-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
   @include media-breakpoint-up(md) {
     display: flex;
     align-items: center;
@@ -31,8 +33,6 @@ video {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    padding-top: 94px;
-    padding-bottom: 94px;  
   }
 }
 .h2-sec-2 {
