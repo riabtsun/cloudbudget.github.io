@@ -1,8 +1,8 @@
 .section-app {
-  background-color:#ed4d5c;
+  background-color: $third-color;
 }
 .app-container {
-    background-color:#ed4d5c;
+    background-color: $third-color;
     @include media-breakpoint-up(md) {
       display: flex;
       justify-content: space-between;

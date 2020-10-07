@@ -41,7 +41,7 @@
 	font-size: 12px;
 	line-height: 150%;
 	text-align: center;
-	color: #ed4d5c;
+	color: $third-color;
 }
 .col-3 {
   @include media-breakpoint-up(md) {

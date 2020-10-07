@@ -27,16 +27,16 @@ button:focus {
   padding-left: 15px;
   padding-right: 15px;
   @include media-breakpoint-up(xs) {
-    max-width: 540px;
+    max-width: map-get($container-width, xs);
   }
   @include media-breakpoint-up(sm) {
-    max-width: 720px;
+    max-width: map-get($container-width, sm);
   }
   @include media-breakpoint-up(md) {
-    max-width: 960px;
+    max-width: map-get($container-width, md);
   }
   @include media-breakpoint-up(lg) {
-    max-width: 1140px;
+    max-width: map-get($container-width, lg);
   }
 }
 .header {
@@ -176,7 +176,7 @@ button:focus {
   @include media-breakpoint-up(xs) {
     min-height: 782px;
     background-image: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), url('../images/main_section_bg.jpg');
-    background-size: contain;
+    background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
   }
