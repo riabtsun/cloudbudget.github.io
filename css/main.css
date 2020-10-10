@@ -24,7 +24,7 @@ button:active {
 }
 
 button:focus {
-  border: 3px solid #000;
+  outline: 1px solid #f57d89;
 }
 
 .container {
@@ -1148,7 +1148,7 @@ video {
   }
 }
 
-@media screen and (min-width: 992px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .contact-container {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -1211,6 +1211,7 @@ video {
 .select-list {
   width: 255px;
   height: 60px;
+  border: 1px solid #333333;
   border-radius: 6px;
   padding-left: 30px;
   margin-bottom: 10px;
@@ -1231,7 +1232,6 @@ video {
 input:focus,
 select:focus {
   outline: 2px solid #ed4c5c;
-  border: none;
 }
 
 select,
@@ -1275,9 +1275,9 @@ input::placeholder {
   text-transform: uppercase;
   background: #ed4c5c;
   border: 1.5px solid #ed4c5c;
+  border-radius: 6px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 6px;
   color: #fff;
   margin-right: auto;
   margin-left: auto;
