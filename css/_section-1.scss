@@ -151,7 +151,9 @@ button:focus {
   }
 }
 .main-section {
-  background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%);
+  background-image: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), url('../images/main_section_bg.jpg');
+  background-size: cover;
+  background-position: center top;
 }
 .main-description {
   font-weight: 700;
@@ -175,8 +177,6 @@ button:focus {
   align-items: center;
   @include media-breakpoint-up(xs) {
     min-height: 782px;
-    background-image: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), url('../images/main_section_bg.jpg');
-    background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
   }
