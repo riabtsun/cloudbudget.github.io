@@ -2,10 +2,10 @@
   background-color: $third-color;
 }
 .app-container {
-    background-color: $third-color;
-    @include media-breakpoint-up(md) {
-      display: flex;
-      justify-content: space-between;
+  background-color: $third-color;
+  @include media-breakpoint-up(md) {
+    display: flex;
+    justify-content: space-between;
     }
 }
 .app-title {

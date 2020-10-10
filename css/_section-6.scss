@@ -90,14 +90,14 @@ input::placeholder {
   color: #fff;
   margin-right: auto;
   margin-left: auto;
-    &:hover {
-      color: #ed4c5c;
-      background: #fff;
-      transition: 0.3s;    
+  &:hover {
+    color: #ed4c5c;
+    background: #fff;
+    transition: 0.3s;    
     }
-    @include media-breakpoint-up(lg) {
-      margin-left: 26px;
-      margin-top: auto;
+  @include media-breakpoint-up(lg) {
+    margin-left: 26px;
+    margin-top: auto;
     }
 }
 .inputs-block {

@@ -45,10 +45,10 @@
 }
 .col-3 {
   @include media-breakpoint-up(md) {
-  display: flex;
-  justify-content: center;
-  width: 33.33333%;
-  padding: 15px;
+    display: flex;
+    justify-content: center;
+    width: 33.33333%;
+    padding: 15px;
   }
 }
 .features-title {

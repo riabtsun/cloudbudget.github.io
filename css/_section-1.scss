@@ -121,17 +121,17 @@ button:focus {
   background: none;
   text-transform: uppercase;
   color: #fff;
-    &:hover {
-      background: #fff;
-      color: #f57d89;
-      transition: 0.3s;
-    }
-    @include media-breakpoint-up(xs) {
+  &:hover {
+    background: #fff;
+    color: #f57d89;
+    transition: 0.3s;
+  }
+  @include media-breakpoint-up(xs) {
       margin-top: 5px;
-    }
-    @include media-breakpoint-up(lg) {
-      margin-left: 30px;
-    }
+  }
+  @include media-breakpoint-up(lg) {
+    margin-left: 30px;
+  }
 }
 .main-title {
   font-weight: 700;
@@ -221,18 +221,18 @@ button:focus {
   line-height: 17px;
   text-transform: uppercase;
   color: #ed4c5c;
-    &:hover {
-      background: #ed4c5c;
-      color: #fff;
-      transition: 0.3s;    
+  &:hover {
+    background: #ed4c5c;
+    color: #fff;
+    transition: 0.3s;    
     }
 }
 .nav {
   @include media-breakpoint-up(sm) {
-      width: 100%;
+    width: 100%;
     }
   @include media-breakpoint-up(lg) {
-      width: auto;
+    width: auto;
     }
   }
 .logo-link {
